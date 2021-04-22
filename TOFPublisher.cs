@@ -6,21 +6,10 @@ namespace RosSharp.RosBridgeClient
 {
     public class TOFPublisher : UnityPublisher<MessageTypes.Std.Int16MultiArray>
     {
-        //public Transform PublishedTransform;
-        //public List<float> TOFreadings;
-        //public ArrayList TOFreadings;
         public short[] TOFreadings;
-        //public short[] data { get; set; }
-        //public string FrameId = "Unity";
         public GameObject Lilbot;
-        //GameObject g = GameObject.Find("Lilbot");
+
         private LilbotLPArrayV2 ArrayScript;
-        //LilbotLPArrayV2 arrayScript = Lilbot.GetComponent<LilbotLPArrayV2>();
-        //public short[] TOFreadings;
-        //private TOFreadings = new ArrayList { ArrayScript.CenterDist, ArrayScript.LeftDist, ArrayScript.RightDist};
-
-        //private ArrayList TOFreadings = new ArrayList { ArrayScript.CenterDist, ArrayScript.LeftDist, ArrayScript.RightDist };
-
         private MessageTypes.Std.Int16MultiArray message;
 
         protected override void Start()
